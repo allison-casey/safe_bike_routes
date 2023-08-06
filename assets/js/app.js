@@ -21,11 +21,54 @@ import "phoenix_html";
 import { Socket } from "phoenix";
 import { LiveSocket } from "phoenix_live_view";
 import topbar from "../vendor/topbar";
+import mapboxgl from "mapbox-gl";
+
+let Hooks = {};
+
+Hooks.Map = {
+  initMap() {
+    const bounds = [
+      [-118.88065856936811, 33.63722119725411], // Southwest coordinates
+      [-117.81279229818037, 34.221998905144076], // Northeast coordinates
+    ];
+
+    mapboxgl.accessToken =
+      "pk.eyJ1IjoiYWxsaXNvbi1jYXNleSIsImEiOiJjbGt5Y2puaDExOTJ2M2dvODk3YmtvZ2RsIn0.c_wjxvRq0S2Nv58mxfStyg";
+    var map = new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/mapbox/streets-v11",
+      center: [-118.35874251099995, 34.061734936928694],
+      maxBounds: bounds,
+      zoom: 12,
+    });
+
+    map.on("load", () => {
+      this.pushEvent("map_loaded", {});
+    });
+
+    this.handleEvent("load_routes", ({ routes }) => {
+      map.addSource("saferoutesla", {
+        type: "geojson",
+        data: routes,
+      });
+      map.addLayer({
+        id: "saferoutesla-layer",
+        type: "line",
+        source: "saferoutesla",
+      });
+    });
+  },
+
+  mounted() {
+    this.initMap();
+  },
+};
 
 let csrfToken = document
   .querySelector("meta[name='csrf-token']")
   .getAttribute("content");
 let liveSocket = new LiveSocket("/live", Socket, {
+  hooks: Hooks,
   params: { _csrf_token: csrfToken },
 });
 
