@@ -2,8 +2,7 @@ defmodule SafeBikeRoutesWeb.PageController do
   use SafeBikeRoutesWeb, :controller
 
   def home(conn, _params) do
-    # The home page is often custom made,
-    # so skip the default app layout.
-    render(conn, :home, layout: false)
+    # redirect for now
+    redirect(conn, to: ~p"/la")
   end
 end
