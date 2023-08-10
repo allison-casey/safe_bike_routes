@@ -9,7 +9,7 @@ defmodule SafeBikeRoutesWeb.Endpoint do
     key: "_safe_bike_routes_key",
     signing_salt: "j61E2DCu",
     same_site: "Lax",
-    check_origin: ["https://safe-bike-routes.gigalixirapp.com"]
+    check_origin: ["https://safe-bike-routes.gigalixirapp.com", "https://www.safebikeroutes.com"]
   ]
 
   socket "/live", Phoenix.LiveView.Socket,
