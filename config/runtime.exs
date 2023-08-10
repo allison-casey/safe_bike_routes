@@ -62,7 +62,8 @@ if config_env() == :prod do
       port: port
     ],
     check_origin: ["https://safe-bike-routes.gigalixirapp.com", "https://www.safebikeroutes.com"],
-    secret_key_base: secret_key_base
+    secret_key_base: secret_key_base,
+    force_ssl: [rewrite_on: [:x_forwarded_proto]]
 
   # ## SSL Support
   #
