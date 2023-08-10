@@ -52,9 +52,22 @@ Hooks.Map = {
         data: routes,
       });
       map.addLayer({
-        id: "saferoutesla-layer",
+        id: "saferoutesla-standard",
         type: "line",
         source: "saferoutesla",
+        filter: ["!=", "routeType", "sidewalk"],
+      });
+
+      map.addLayer({
+        id: "saferoutesla-sidewalk",
+        type: "line",
+        source: "saferoutesla",
+        filter: ["==", "routeType", "sidewalk"],
+        paint: {
+          "line-color": "orange",
+          "line-width": 5,
+          "line-dasharray": [2, 1],
+        },
       });
     });
   },
