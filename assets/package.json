@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "mapbox-gl": "^2.15.0"
+  },
+  "scripts": {
+    "deploy": "cd .. && mix assets.deploy && rm -f _build/esbuild*"
   }
 }
