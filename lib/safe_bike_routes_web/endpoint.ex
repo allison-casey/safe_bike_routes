@@ -8,7 +8,8 @@ defmodule SafeBikeRoutesWeb.Endpoint do
     store: :cookie,
     key: "_safe_bike_routes_key",
     signing_salt: "j61E2DCu",
-    same_site: "Lax"
+    same_site: "Lax",
+    check_origin: ["https://safe-bike-routes.gigalixirapp.com"]
   ]
 
   socket "/live", Phoenix.LiveView.Socket,
