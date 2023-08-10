@@ -11,7 +11,7 @@ defmodule SafeBikeRoutes.Application do
       # Start the Telemetry supervisor
       SafeBikeRoutesWeb.Telemetry,
       # Start the Ecto repository
-      SafeBikeRoutes.Repo,
+      # SafeBikeRoutes.Repo,
       # Start the PubSub system
       {Phoenix.PubSub, name: SafeBikeRoutes.PubSub},
       # Start Finch

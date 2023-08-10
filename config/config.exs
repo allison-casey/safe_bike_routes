@@ -8,7 +8,7 @@
 import Config
 
 config :safe_bike_routes,
-  ecto_repos: [SafeBikeRoutes.Repo]
+  ecto_repos: []
 
 # Configures the endpoint
 config :safe_bike_routes, SafeBikeRoutesWeb.Endpoint,

@@ -1,7 +1,7 @@
 defmodule SafeBikeRoutesWeb.LALive do
   use SafeBikeRoutesWeb, :live_view
 
-  @la_routes Application.app_dir(:safe_bike_routes, "priv/static/assets/map.json")
+  @la_routes Application.app_dir(:safe_bike_routes, "priv/static/map.json")
              |> File.read!()
              |> Poison.decode!()
 
