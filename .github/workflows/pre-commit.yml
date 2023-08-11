@@ -1,0 +1,19 @@
+name: pre-commit
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: 26.0
+          elixir-version: 1.15.4
+      - run: mix deps.get
+      - uses: actions/setup-python@v3
+      - uses: pre-commit/action@v3.0.0
