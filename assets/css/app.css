@@ -3,3 +3,36 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+#slideout {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+#slideout.off {
+  right: -420px;
+}
+
+#slideout-button {
+  position: fixed;
+  top: 45%;
+  right: 385px;
+  z-index: 200;
+  transform: rotate(180deg);
+  -webkit-transition-duration: 0.28s;
+  -moz-transition-duration: 0.28s;
+  -o-transition-duration: 0.28s;
+  transition-duration: 0.28s;
+}
+
+#slideout-button.off {
+  right: -15px;
+  transform: rotate(0);
+}
