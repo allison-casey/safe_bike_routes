@@ -34,3 +34,8 @@ safe_bike_routes-*.tar
 # In case you use Node.js/npm, you want to ignore these.
 npm-debug.log
 /assets/node_modules/
+
+# Local Development Files
+.devcontainer/
+.direnv/
+.envrc
