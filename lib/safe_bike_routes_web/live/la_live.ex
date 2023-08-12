@@ -48,7 +48,7 @@ defmodule SafeBikeRoutesWeb.LALive do
 
   def panel_button_classes() do
     style = [
-      "p-3",
+      # "p-3",
       "font-xl",
       "border",
       "text-slate-300",
@@ -58,12 +58,18 @@ defmodule SafeBikeRoutesWeb.LALive do
       "fixed",
       "z-40",
       "ease-in-out",
-      "duration-300"
+      "duration-300",
+      "w-12",
+      "h-12",
+      "p-0",
+      "flex",
+      "items-center",
+      "justify-center"
     ]
 
     mobile = [
       "bottom-[275px]",
-      "right-1/2",
+      "right-[47%]",
       "-rotate-90"
     ]
 
@@ -80,7 +86,7 @@ defmodule SafeBikeRoutesWeb.LALive do
   def render(assigns) do
     ~H"""
     <button id="slideout-button" class={panel_button_classes()} phx-click={toggle_panel()}>
-      &lt;
+      <SafeBikeRoutesWeb.CoreComponents.icon name="hero-chevron-left" />
     </button>
     <div id="slideout" class={panel_classes()}>
       <div class="text-xl font-medium text-black">Safe Bike Routes: LA</div>
@@ -124,12 +130,12 @@ defmodule SafeBikeRoutesWeb.LALive do
         <li>everything else is ass and LADOT should get their shit together</li>
       </ul>
     </div>
-    <div
+    <%!-- <div
       id="map"
       phx-hook="Map"
       phx-update="ignore"
       style="position: absolute; top: 0; bottom: 0; left: 0; width: 100%;"
-    />
+    /> --%>
     """
   end
 
