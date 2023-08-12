@@ -26,7 +26,7 @@ defmodule SafeBikeRoutesWeb.LALive do
     >
       &lt;
     </button>
-    <div id="slideout" class="bg-white shadow p-6">
+    <div id="slideout" class="bg-white shadow p-7">
       <div class="text-xl font-medium text-black">Safe Bike Routes: LA</div>
       <p class="text-slate-500">Because Google Maps Bike Routes are ass and I don't want to die.</p>
       <p class="py-5">
