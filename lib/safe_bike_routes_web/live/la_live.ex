@@ -84,9 +84,14 @@ defmodule SafeBikeRoutesWeb.LALive do
     </button>
     <div id="slideout" class={panel_classes()}>
       <div class="text-xl font-medium text-black">Safe Bike Routes: LA</div>
-      <p class="text-slate-500">Because Google Maps Bike Routes are ass and I don't want to die.</p>
+      <p class="text-slate-500">
+        Because Google Maps Bike Routes are ass and I don't want to die.
+      </p>
       <p class="py-5">
-        These routes were made by me to get around the parts of LA I generally travel around using both personal experience and google maps satellite and street views. If you notice anything wrong with them or would like to suggest new routes to add, please check out the <a
+        These routes were made by me to get around the parts of LA I
+        generally travel around using both personal experience and google maps
+        satellite and street views. If you notice anything wrong with them or
+        would like to suggest new routes to add, please check out the <a
           class="underline decoration-sky-600 hover:decoration-blue-400"
           href="https://forms.gle/xcFbpyW1iK7D7D598"
         >google form</a>!
@@ -94,10 +99,13 @@ defmodule SafeBikeRoutesWeb.LALive do
       <div class="text-l font-medium">Legend</div>
       <ul class="list-disc px-5">
         <li>
-          <span class="font-bold underline">black</span>: routes follow all of the rules laid out below
+          <span class="font-bold underline">black</span>: routes follow all of the rules
+          laid out below
         </li>
         <li>
-          <span class="font-bold underline text-orange-500">dashed orange</span>: routes are intended to be ridden on the sidewalk and only used to connect major routes that would otherwise fall under black
+          <span class="font-bold underline text-orange-500">dashed orange</span>: routes
+          are intended to be ridden on the sidewalk and only used to connect major
+          routes that would otherwise fall under black
         </li>
       </ul>
       <div class="pt-5 text-l font-medium">The Rules</div>
@@ -105,20 +113,23 @@ defmodule SafeBikeRoutesWeb.LALive do
         <li>sharrows only allowed on narrow residential streets</li>
         <li>bicycle gutters only allowed on 2 lane roads</li>
         <li>
-          if it's any wider than two lanes (including center turn lane) it must be somehow physically separated
+          if it's any wider than two lanes (including center turn lane) it
+          must be somehow physically separated
         </li>
         <li>
-          routes should strive to be as contiguous as possible, cross multiple arterials exclusively at signalized intersections, and provide safe routes across freeway boundaries
+          routes should strive to be as contiguous as possible, cross multiple
+          arterials exclusively at signalized intersections, and provide safe
+          routes across freeway boundaries
         </li>
         <li>everything else is ass and LADOT should get their shit together</li>
       </ul>
     </div>
-    <%!-- <div
+    <div
       id="map"
       phx-hook="Map"
       phx-update="ignore"
       style="position: absolute; top: 0; bottom: 0; left: 0; width: 100%;"
-    /> --%>
+    />
     """
   end
 
