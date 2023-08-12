@@ -17,16 +17,72 @@ defmodule SafeBikeRoutesWeb.LALive do
     |> JS.add_class("off", to: "#slideout-button:not(.off)")
   end
 
+  def panel_classes() do
+    style = [
+      "bg-white",
+      "shadow",
+      "p-7",
+      "fixed",
+      "z-20",
+      "ease-in-out",
+      "duration-300",
+      "overflow-y-auto"
+    ]
+
+    desktop = [
+      "md:top-0",
+      "md:right-0",
+      "md:w-[400px]",
+      "md:h-full"
+    ]
+
+    mobile = [
+      "bottom-0",
+      "right-0",
+      "w-full",
+      "h-[300px]"
+    ]
+
+    style ++ desktop ++ mobile
+  end
+
+  def panel_button_classes() do
+    style = [
+      "p-3",
+      "font-xl",
+      "border",
+      "text-slate-300",
+      "font-semibold",
+      "rounded-lg",
+      "bg-white",
+      "fixed",
+      "z-40",
+      "ease-in-out",
+      "duration-300"
+    ]
+
+    mobile = [
+      "bottom-[275px]",
+      "right-1/2",
+      "-rotate-90"
+    ]
+
+    desktop = [
+      "md:top-1/2",
+      "md:right-[385px]",
+      "md:rotate-180",
+      "md:bottom-auto"
+    ]
+
+    style ++ desktop ++ mobile
+  end
+
   def render(assigns) do
     ~H"""
-    <button
-      id="slideout-button"
-      class="p-3 font-xl border text-slate-300 font-semibold rounded-lg bg-white"
-      phx-click={toggle_panel()}
-    >
+    <button id="slideout-button" class={panel_button_classes()} phx-click={toggle_panel()}>
       &lt;
     </button>
-    <div id="slideout" class="bg-white shadow p-7">
+    <div id="slideout" class={panel_classes()}>
       <div class="text-xl font-medium text-black">Safe Bike Routes: LA</div>
       <p class="text-slate-500">Because Google Maps Bike Routes are ass and I don't want to die.</p>
       <p class="py-5">
@@ -57,12 +113,12 @@ defmodule SafeBikeRoutesWeb.LALive do
         <li>everything else is ass and LADOT should get their shit together</li>
       </ul>
     </div>
-    <div
+    <%!-- <div
       id="map"
       phx-hook="Map"
       phx-update="ignore"
       style="position: absolute; top: 0; bottom: 0; left: 0; width: 100%;"
-    />
+    /> --%>
     """
   end
 
