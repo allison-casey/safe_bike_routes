@@ -29,7 +29,7 @@ Hooks.Map = {
   initMap() {
     const bounds = [
       [-118.88065856936811, 33.63722119725411], // Southwest coordinates
-      [-117.81279229818037, 34.221998905144076], // Northeast coordinates
+      [-117.83375850298786, 34.4356118682199], // Northeast coordinates
     ];
 
     mapboxgl.accessToken =
