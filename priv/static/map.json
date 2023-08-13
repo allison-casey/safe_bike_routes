@@ -3,7 +3,55 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "sidewalk" },
+      "geometry": {
+        "coordinates": [
+          [-118.300259, 33.969369, 0],
+          [-118.300216, 33.967287, 0]
+        ],
+        "type": "LineString"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "routeType": "sidewalk" },
+      "geometry": {
+        "coordinates": [
+          [-118.377219, 34.021971, 0],
+          [-118.377354, 34.021609, 0],
+          [-118.377714, 34.021353, 0],
+          [-118.37813, 34.021265, 0],
+          [-118.37812, 34.021164, 0]
+        ],
+        "type": "LineString"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "routeType": "sidewalk" },
+      "geometry": {
+        "coordinates": [
+          [-118.413108, 34.048571, 0],
+          [-118.406242, 34.052563, 0],
+          [-118.40224, 34.053976, 0]
+        ],
+        "type": "LineString"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "routeType": "protected" },
+      "geometry": {
+        "coordinates": [
+          [-118.53608022126865, 34.228471878445276],
+          [-118.53610315592606, 34.24278023352663]
+        ],
+        "type": "LineString"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.4532233685199, 33.96266067972866],
@@ -50,16 +98,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 100 The Strand, Manhattan Beach, CA 90266, USA to 4701 166th St, Lawndale, CA 90260, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.40819, 33.87741, 0],
@@ -228,16 +267,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 366 S Cochran Ave, Los Angeles, CA 90036, USA to 3011 4th St, Los Angeles, CA 90020, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.34724, 34.06688, 0],
@@ -433,16 +463,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 502 Colorado Ave, Santa Monica, CA 90401, USA to 2701 Overland Ave, Los Angeles, CA 90064, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.49089, 34.01455, 0],
@@ -875,16 +896,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 1402 N Formosa Ave, Los Angeles, CA 90046, USA to 3990 Los Feliz Blvd, Los Angeles, CA 90027, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.34615, 34.09617, 0],
@@ -1166,16 +1178,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 1500 Thayer Ave, Los Angeles, CA 90024, USA to 6 Arizona Ave, Santa Monica, CA 90401, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.42939, 34.05975, 0],
@@ -1519,16 +1522,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 1656 S Sierra Bonita Ave, Los Angeles, CA 90019, USA to Pico EB &amp; Roxbury NS, Los Angeles, CA 90035, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.36098, 34.04398, 0],
@@ -1701,16 +1695,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 1665 S Curson Ave, Los Angeles, CA 90019, USA to 800 S Curson Ave, Los Angeles, CA 90036, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.36172, 34.04438, 0],
@@ -1775,16 +1760,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 3431 Pacific Pl, Long Beach, CA 90806, USA to 4265 Country Club Dr, Long Beach, CA 90807, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.19639, 33.81947, 0],
@@ -1901,16 +1877,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 3900 Chestnut Ave, Long Beach, CA 90807, USA to 3801 Marron Ave, Long Beach, CA 90807, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.1975, 33.82906, 0],
@@ -1997,15 +1964,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 5122 S Atlantic Blvd, Vernon, CA 90058, USA to 5215 Pendleton Ave, South Gate, CA 90280, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "{\"normal\":\"#line-1267FF-5000-nodesc-normal\",\"highlight\":\"#line-1267FF-5000-nodesc-highlight\"}",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.18234, 33.99411, 0],
@@ -2399,16 +2358,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 9911 Beverly Green Dr, Los Angeles, CA 90035, USA to Wilshire / Roxbury, Beverly Hills, CA 90212, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.40506, 34.05309, 0],
@@ -2494,16 +2444,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 11165 Tennessee Ave, Los Angeles, CA 90064, USA to 10275 W Pico Blvd, Los Angeles, CA 90064, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.43786, 34.038, 0],
@@ -2640,16 +2581,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 14755 E Pacific Coast Hwy, Santa Monica, CA 90402, USA to 4 Washington Blvd, Marina Del Rey, CA 90292, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.51876, 34.02694, 0],
@@ -3200,16 +3132,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from 501505 N San Fernando Rd, Los Angeles, CA 90065, USA to 48 Riverside Dr, Los Angeles, CA 90027, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.22614, 34.08143, 0],
@@ -4088,16 +4011,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from Bike Path Bridge, Culver City, CA to 389 Paseo De La Playa, Redondo Beach, CA 90277, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.37675, 34.02696, 0],
@@ -5107,16 +5021,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from Bixby North, Long Beach, CA to 999 E Willow St, Signal Hill, CA 90755, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.17949, 33.84536, 0],
@@ -5284,16 +5189,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from Fountain &amp; Edgemont Ave., Los Angeles, CA 90027, USA to 2567 W Pico Blvd, Los Angeles, CA 90006, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.2962, 34.09539, 0],
@@ -5476,15 +5372,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from Golden Shore RV Resort, Golden Shore, Long Beach, CA to 788 Rio Del Sol Ave, Montebello, CA 90640, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "{\"normal\":\"#line-1267FF-5000-nodesc-normal\",\"highlight\":\"#line-1267FF-5000-nodesc-highlight\"}",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.2023, 33.76486, 0],
@@ -6251,16 +6139,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from la cienega / willoughby ave to north gower st/ wiloughby ave",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.37646, 34.087, 0],
@@ -6386,16 +6265,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from s beverly dr / whiteworth dr to 1354 S Orange Dr, Los Angeles, CA 90019, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.3967, 34.0571, 0],
@@ -6577,16 +6447,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from santa monica blvd / n almont dr to 3845 Main St, Culver City, CA 90232, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.38793, 34.08234, 0],
@@ -6965,16 +6826,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Directions from Venice / Cochran, Los Angeles, CA to 7176 Sunset Blvd, Los Angeles, CA 90046, USA",
-        "styleUrl": "#line-1267FF-5000-nodesc",
-        "styleHash": "4b899179",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.353775, 34.04431, 0],
@@ -7151,16 +7003,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 98",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.40046, 33.88015, 0],
@@ -7171,16 +7014,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 105",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.38153, 33.863311, 0],
@@ -7194,56 +7028,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 120",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "#f57d00",
-        "stroke-opacity": "",
-        "stroke-width": 5,
-        "_umap_options": "{\"color\":\"Orange\"}",
-        "routeType": "sidewalk"
-      },
-      "geometry": {
-        "coordinates": [
-          [-118.300259, 33.969369, 0],
-          [-118.300216, 33.967287, 0]
-        ],
-        "type": "LineString"
-      },
-      "id": 25
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Line 191",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "#f57d00",
-        "stroke-opacity": "",
-        "stroke-width": 5,
-        "_umap_options": "{\"color\":\"Orange\"}",
-        "routeType": "sidewalk"
-      },
-      "geometry": {
-        "coordinates": [
-          [-118.377219, 34.021971, 0],
-          [-118.377354, 34.021609, 0],
-          [-118.377714, 34.021353, 0],
-          [-118.37813, 34.021265, 0],
-          [-118.37812, 34.021164, 0]
-        ],
-        "type": "LineString"
-      },
-      "id": 26
-    },
-    {
-      "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.38160072500715, 33.96948794261955],
@@ -7266,40 +7051,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Century City / Pico",
-        "styleUrl": "#line-F57C00-6038-nodesc",
-        "styleHash": "-6ea5790b",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#f57c00",
-        "stroke-opacity": 1,
-        "stroke-width": 6,
-        "_umap_options": "{\"0\":\"[\",\"1\":\"o\",\"2\":\"b\",\"3\":\"j\",\"4\":\"e\",\"5\":\"c\",\"6\":\"t\",\"7\":\" \",\"8\":\"O\",\"9\":\"b\",\"10\":\"j\",\"11\":\"e\",\"12\":\"c\",\"13\":\"t\",\"14\":\"]\",\"color\":\"Orange\"}",
-        "routeType": "sidewalk"
-      },
-      "geometry": {
-        "coordinates": [
-          [-118.413108, 34.048571, 0],
-          [-118.406242, 34.052563, 0],
-          [-118.40224, 34.053976, 0]
-        ],
-        "type": "LineString"
-      },
-      "id": 28
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Line 1",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.39428, 34.05245, 0],
@@ -7321,16 +7073,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 2",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.390271, 34.052475, 0],
@@ -7345,16 +7088,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 3",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.398106, 34.067906, 0],
@@ -7367,16 +7101,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 4",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.396104, 34.07526, 0],
@@ -7387,16 +7112,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 5",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.396089, 34.069132, 0],
@@ -7407,16 +7123,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 6",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.408769, 34.021122, 0],
@@ -7431,16 +7138,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 7",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.425358, 33.985608, 0],
@@ -7460,16 +7158,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 9",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.403309, 34.029138, 0],
@@ -7483,16 +7172,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 11",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.415653, 34.025681, 0],
@@ -7507,16 +7187,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 12",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.420868, 34.016593, 0],
@@ -7527,16 +7198,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 13",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.33422, 34.06689, 0],
@@ -7556,16 +7218,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 14",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.335751, 34.066946, 0],
@@ -7588,16 +7241,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 15",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.33634, 34.09617, 0],
@@ -7608,16 +7252,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 15",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.325979, 34.071143, 0],
@@ -7640,16 +7275,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 16",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.33099, 34.08712, 0],
@@ -7664,16 +7290,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 16",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.326057, 34.081635, 0],
@@ -7686,16 +7303,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 17",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.264417, 34.118335, 0],
@@ -7721,16 +7329,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 18",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.253345, 34.104426, 0],
@@ -7741,16 +7340,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 19",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.271591, 34.116918, 0],
@@ -7768,16 +7358,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 20",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.268457, 34.123517, 0],
@@ -7803,16 +7384,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 21",
-        "styleUrl": "#line-000000-1200-nodesc",
-        "styleHash": "c2c637f",
-        "styleMapHash": "[object Object]",
-        "description": "",
-        "stroke": "#000000",
-        "stroke-opacity": 1,
-        "stroke-width": 1.2
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.393852, 34.066983, 0],
@@ -7823,16 +7395,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 25",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.36118, 34.057009, 0],
@@ -7846,16 +7409,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 26",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.238906, 34.057087, 0],
@@ -7871,16 +7425,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 26",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.28527, 34.11115, 0],
@@ -7907,16 +7452,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 27",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.35906, 33.88015, 0],
@@ -7930,16 +7466,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 28",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.377455, 34.069363, 0],
@@ -7960,16 +7487,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 30",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.371634, 34.050678, 0],
@@ -7982,16 +7500,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 31",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.3743, 34.051177, 0],
@@ -8012,16 +7521,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 32",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.440712, 34.034211, 0],
@@ -8032,16 +7532,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 33",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.443713, 34.028994, 0],
@@ -8062,16 +7553,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 34",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.460382, 34.029031, 0],
@@ -8085,16 +7567,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 35",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.45473, 34.0082, 0],
@@ -8105,16 +7578,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 36",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.463953, 33.990083, 0],
@@ -8131,16 +7595,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 37",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.38958, 34.04959, 0],
@@ -8151,16 +7606,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 63",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.362638, 34.078228, 0],
@@ -8175,16 +7621,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 65",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.363773, 34.078182, 0],
@@ -8198,16 +7635,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 67",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.353195, 34.070411, 0],
@@ -8218,16 +7646,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 68",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.360453, 34.09623, 0],
@@ -8238,16 +7657,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 69",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.35534, 34.08716, 0],
@@ -8264,16 +7674,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 71",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.358202, 34.09621, 0],
@@ -8289,16 +7690,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 72",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.341799, 34.104126, 0],
@@ -8313,16 +7705,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 73",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.34065, 34.0871, 0],
@@ -8335,16 +7718,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 74",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.33659, 34.09617, 0],
@@ -8360,16 +7734,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 74",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.32373, 34.09621, 0],
@@ -8380,16 +7745,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 75",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.341775, 34.102761, 0],
@@ -8417,16 +7773,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 76",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.336189, 34.103192, 0],
@@ -8437,16 +7784,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 76",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.35936, 34.06082, 0],
@@ -8464,16 +7802,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 77",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.380614, 34.073585, 0],
@@ -8499,16 +7828,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 78",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.39401, 34.03614, 0],
@@ -8524,16 +7844,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 79",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.372185, 34.026311, 0],
@@ -8553,16 +7864,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 80",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.396627, 34.02118, 0],
@@ -8578,16 +7880,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 82",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.3917, 34.04556, 0],
@@ -8609,16 +7902,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 83",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.39252, 34.03955, 0],
@@ -8631,16 +7915,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 84",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.444362, 33.994651, 0],
@@ -8652,16 +7927,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 84",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.439731, 33.976729, 0],
@@ -8704,16 +7970,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 85",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.424623, 34.008625, 0],
@@ -8724,16 +7981,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 86",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.469576, 33.982189, 0],
@@ -8754,16 +8002,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 86",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.353653, 34.073546, 0],
@@ -8775,16 +8014,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 87",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.3892, 34.08077, 0],
@@ -8804,16 +8034,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 88",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.361515, 34.074323, 0],
@@ -8826,16 +8047,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 89",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.409989, 34.065018, 0],
@@ -8867,16 +8079,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 90",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.372293, 34.052126, 0],
@@ -8888,16 +8091,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 91",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.374536, 34.050389, 0],
@@ -8908,16 +8102,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 92",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.39314, 34.03856, 0],
@@ -8931,16 +8116,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 93",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.42144, 34.03744, 0],
@@ -8979,16 +8155,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 94",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.403309, 34.029138, 0],
@@ -8999,16 +8166,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 95",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.370033, 34.08014, 0],
@@ -9027,16 +8185,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 96",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.37034, 34.09637, 0],
@@ -9047,16 +8196,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 97",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.36911, 34.08711, 0],
@@ -9068,16 +8208,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 98",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.35925, 34.05207, 0],
@@ -9088,16 +8219,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 99",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.40887, 34.01382, 0],
@@ -9110,16 +8232,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 99",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.44321, 34.05249, 0],
@@ -9130,16 +8243,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 100",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.40586, 34.01018, 0],
@@ -9151,16 +8255,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 100",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.43501, 34.03969, 0],
@@ -9173,16 +8268,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 101",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.431297, 34.004903, 0],
@@ -9196,16 +8282,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 102",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.398837, 33.999467, 0],
@@ -9224,16 +8301,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 104",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.413906, 33.888029, 0],
@@ -9250,16 +8318,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 105",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.368584, 33.962732, 0],
@@ -9270,16 +8329,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 106",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.350452, 33.967377, 0],
@@ -9290,16 +8340,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 107",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.50101, 34.0419, 0],
@@ -9334,16 +8375,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 108",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.505866, 34.03656, 0],
@@ -9357,16 +8389,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 109",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.50439, 34.019615, 0],
@@ -9377,16 +8400,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 110",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.511133, 34.024753, 0],
@@ -9404,16 +8418,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 111",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.453968, 34.007158, 0],
@@ -9428,16 +8433,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 112",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.463513, 33.990634, 0],
@@ -9452,16 +8448,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 113",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.488165, 34.003822, 0],
@@ -9479,16 +8466,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 113",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.37229, 33.894632, 0],
@@ -9502,16 +8480,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 114",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.400672, 33.859016, 0],
@@ -9531,16 +8500,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 115",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.263275, 34.038292, 0],
@@ -9551,16 +8511,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 116",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.259851, 34.049336, 0],
@@ -9571,16 +8522,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 117",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.256623, 34.047298, 0],
@@ -9594,16 +8536,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 118",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.295874, 34.018154, 0],
@@ -9617,16 +8550,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 119",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.300216, 33.967287, 0],
@@ -9663,16 +8587,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 121",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.42416639022892, 34.03138722448477],
@@ -9684,16 +8599,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 122",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.423831, 34.021288, 0],
@@ -9704,16 +8610,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 122",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.171915, 33.963689, 0],
@@ -9724,16 +8621,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 122",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.27442, 34.030786, 0],
@@ -9750,16 +8638,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 123",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.305848, 34.034533, 0],
@@ -9773,16 +8652,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 124",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.317563, 34.030846, 0],
@@ -9800,16 +8670,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 125",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.350764, 34.024679, 0],
@@ -9838,16 +8699,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 126",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.349847, 34.027377, 0],
@@ -9866,16 +8718,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 128",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.296295, 34.039988, 0],
@@ -9889,16 +8732,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 129",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.340713, 34.016266, 0],
@@ -9914,16 +8748,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 130",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.340713, 34.016266, 0],
@@ -9940,16 +8765,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 131",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.3374, 34.024024, 0],
@@ -9962,16 +8778,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 132",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.330076, 34.014603, 0],
@@ -9984,16 +8791,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 133",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.328267, 34.029655, 0],
@@ -10006,16 +8804,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 134",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.324814, 34.029672, 0],
@@ -10029,16 +8818,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 135",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.3374, 34.024024, 0],
@@ -10049,16 +8829,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 136",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.283528, 34.018595, 0],
@@ -10072,16 +8843,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 137",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.317747, 34.022883, 0],
@@ -10092,16 +8854,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 138",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.304579, 34.015563, 0],
@@ -10114,16 +8867,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 139",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.313255, 34.014614, 0],
@@ -10136,16 +8880,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 140",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.295928, 34.021994, 0],
@@ -10159,16 +8894,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 141",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.330006, 34.030313, 0],
@@ -10182,16 +8908,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 142",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.32416, 34.030614, 0],
@@ -10206,16 +8923,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 143",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.311182, 34.05089, 0],
@@ -10228,16 +8936,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 144",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.311395, 34.076174, 0],
@@ -10253,16 +8952,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 145",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.323193, 34.051789, 0],
@@ -10285,16 +8975,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 146",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.31986, 34.055553, 0],
@@ -10313,16 +8994,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 147",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.31577, 34.09377, 0],
@@ -10334,16 +9006,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 148",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.323223, 34.047026, 0],
@@ -10366,16 +9029,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 149",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.327398, 34.062019, 0],
@@ -10386,16 +9040,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 150",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.336781, 34.055638, 0],
@@ -10416,16 +9061,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 151",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.355531, 34.046606, 0],
@@ -10441,16 +9077,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 152",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.443361, 34.024517, 0],
@@ -10464,16 +9091,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 153",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.45372, 33.989767, 0],
@@ -10493,16 +9111,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 154",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.471588, 34.006156, 0],
@@ -10513,16 +9122,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 155",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.46976, 34.01529, 0],
@@ -10533,16 +9133,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 156",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.456186, 33.991391, 0],
@@ -10556,16 +9147,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 157",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.304329, 34.039967, 0],
@@ -10580,16 +9162,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 158",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.30289, 34.0672, 0],
@@ -10602,16 +9175,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 159",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.415864, 34.036763, 0],
@@ -10657,16 +9221,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 160",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.43721, 34.05626, 0],
@@ -10683,16 +9238,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 161",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.445122, 34.062583, 0],
@@ -10718,16 +9264,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 162",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.359454, 33.89105, 0],
@@ -10752,16 +9289,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 163",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.313548, 33.892856, 0],
@@ -10774,16 +9302,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 164",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.300529, 33.899633, 0],
@@ -10796,16 +9315,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 165",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.300529, 33.899633, 0],
@@ -10816,16 +9326,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 166",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.311652, 33.880146, 0],
@@ -10842,16 +9343,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 167",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.304426, 33.880171, 0],
@@ -10869,16 +9361,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 168",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.34614, 33.880128, 0],
@@ -10893,16 +9376,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 169",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.357649, 33.891047, 0],
@@ -10918,16 +9392,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 170",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.314524, 34.049442, 0],
@@ -10952,16 +9417,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 171",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.331973, 34.034314, 0],
@@ -10975,16 +9431,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 172",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.353268, 34.080249, 0],
@@ -10995,16 +9442,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 173",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.370041, 34.078161, 0],
@@ -11015,16 +9453,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 174",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.419803, 33.899982, 0],
@@ -11045,16 +9474,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 174",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.282345, 34.01835, 0],
@@ -11065,16 +9485,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 174",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.431284, 33.984988, 0],
@@ -11091,16 +9502,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 175",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.49493, 34.011466, 0],
@@ -11111,16 +9513,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 176",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.49089, 34.01455, 0],
@@ -11132,16 +9525,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 177",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.4742, 34.01697, 0],
@@ -11152,16 +9536,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 178",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.46451, 34.010128, 0],
@@ -11175,16 +9550,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 179",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.4742, 34.01697, 0],
@@ -11197,16 +9563,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 180",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.479681, 34.005048, 0],
@@ -11222,16 +9579,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 181",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.467993, 34.008217, 0],
@@ -11246,16 +9594,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 182",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.481096, 34.043651, 0],
@@ -11266,16 +9605,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 183",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.453865, 34.03271, 0],
@@ -11287,16 +9617,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 184",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.453865, 34.03271, 0],
@@ -11307,16 +9628,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 185",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.458508, 34.036561, 0],
@@ -11327,16 +9639,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 186",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.465741, 34.071267, 0],
@@ -11366,16 +9669,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 187",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.455538, 34.055673, 0],
@@ -11399,16 +9693,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 189",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.460382, 34.029031, 0],
@@ -11421,16 +9706,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 189",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.37833, 34.0221, 0],
@@ -11441,16 +9717,7 @@
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Line 190",
-        "styleUrl": "",
-        "styleHash": "",
-        "styleMapHash": "",
-        "description": "",
-        "stroke": "",
-        "stroke-opacity": "",
-        "stroke-width": ""
-      },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.37812, 34.021164, 0],
@@ -11493,7 +9760,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.43516120893983, 33.92851559851556],
@@ -11536,7 +9803,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.43266546508687, 33.96123624694562],
@@ -11575,7 +9842,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.40211237791186, 33.99618672751316],
@@ -11591,7 +9858,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.40139706111157, 33.986489157991926],
@@ -11602,7 +9869,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.40435850259863, 33.95494114855961],
@@ -11620,7 +9887,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.41320209961839, 33.970343615511666],
@@ -11651,7 +9918,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.41003945708445, 33.97120591586372],
@@ -11669,7 +9936,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.4254202927314, 33.965838895591844],
@@ -11725,7 +9992,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.38239755750989, 33.96879583027585],
@@ -11753,7 +10020,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.42553401045416, 34.02879014897198],
@@ -11771,7 +10038,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.46190233713756, 34.06690541401903],
@@ -11807,7 +10074,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.32710120143135, 34.014613152307106],
@@ -11980,7 +10247,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.45004211841578, 33.95751592150984],
@@ -11993,7 +10260,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.27750165369511, 34.090988437047685],
@@ -12025,7 +10292,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.52734929015516, 34.23573726791611],
@@ -12043,7 +10310,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.52464093351583, 34.24097219324241],
@@ -12054,18 +10321,6 @@
         ],
         "type": "LineString"
       }
-    },
-    {
-      "type": "Feature",
-      "properties": { "routeType": "protected" },
-      "geometry": {
-        "coordinates": [
-          [-118.55355101099336, 34.22827534936131],
-          [-118.55358371847902, 34.242768962415965]
-        ],
-        "type": "LineString"
-      },
-      "id": 211
     }
   ]
 }
