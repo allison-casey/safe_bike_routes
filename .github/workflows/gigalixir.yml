@@ -3,6 +3,9 @@ on:
     types: [closed]
     branches:
       - main
+  push:
+    branches: [main]
+
 jobs:
   docker:
     runs-on: ubuntu-latest
