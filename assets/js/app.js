@@ -23,8 +23,21 @@ import { LiveSocket } from "phoenix_live_view";
 import topbar from "../vendor/topbar";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
+import routeStyles from "./route_styles";
 
 let Hooks = {};
+
+function paintRoute(map, source, routeType, paintLayers) {
+  for (const [index, paintLayer] of paintLayers.entries()) {
+    map.addLayer({
+      id: `${source}-${routeType}-${index}`,
+      type: "line",
+      source: source,
+      filter: ["==", "routeType", routeType],
+      paint: paintLayer,
+    });
+  }
+}
 
 Hooks.Map = {
   initMap() {
@@ -91,83 +104,9 @@ Hooks.Map = {
         type: "geojson",
         data: routes,
       });
-      map.addLayer({
-        id: "saferoutesla-standard",
-        type: "line",
-        source: "saferoutesla",
-        filter: ["!=", "routeType", "sidewalk"],
-      });
-
-      // let routeTypes = ["sidewalk", "lane", "protected", "track"]
-      map.addLayer({
-        id: "saferoutesla-sidewalk",
-        type: "line",
-        source: "saferoutesla",
-        filter: ["==", "routeType", "sidewalk"],
-        paint: {
-          "line-color": "orange",
-          "line-width": 5,
-          "line-dasharray": [2, 2],
-        },
-      });
-
-      map.addLayer({
-        id: "saferoutesla-lane",
-        type: "line",
-        source: "saferoutesla",
-        filter: ["==", "routeType", "lane"],
-        paint: {
-          "line-color": "blue",
-          "line-width": 3,
-        },
-      });
-
-      map.addLayer({
-        id: "saferoutesla-track",
-        type: "line",
-        source: "saferoutesla",
-        filter: ["==", "routeType", "track"],
-        paint: {
-          "line-color": "yellow",
-          "line-width": 5,
-          // "line-gap-width": 10,
-        },
-      });
-
-      map.addLayer({
-        id: "saferoutesla-track-outline",
-        type: "line",
-        source: "saferoutesla",
-        filter: ["==", "routeType", "track"],
-        paint: {
-          "line-color": "black",
-          "line-width": 2,
-          "line-gap-width": 5,
-        },
-      });
-
-      map.addLayer({
-        id: "saferoutesla-protected",
-        type: "line",
-        source: "saferoutesla",
-        filter: ["==", "routeType", "protected"],
-        paint: {
-          "line-color": "black",
-          "line-width": 2,
-          "line-gap-width": 2,
-          "line-dasharray": [2, 2],
-        },
-      });
-      map.addLayer({
-        id: "saferoutesla-protected-inner",
-        type: "line",
-        source: "saferoutesla",
-        filter: ["==", "routeType", "protected"],
-        paint: {
-          "line-color": "yellow",
-          "line-width": 2,
-        },
-      });
+      for (const { routeType, paintLayers } of routeStyles) {
+        paintRoute(map, "saferoutesla", routeType, paintLayers);
+      }
     });
   },
 
