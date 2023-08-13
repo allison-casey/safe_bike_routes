@@ -98,6 +98,7 @@ Hooks.Map = {
         filter: ["!=", "routeType", "sidewalk"],
       });
 
+      // let routeTypes = ["sidewalk", "lane", "protected", "track"]
       map.addLayer({
         id: "saferoutesla-sidewalk",
         type: "line",
@@ -106,7 +107,65 @@ Hooks.Map = {
         paint: {
           "line-color": "orange",
           "line-width": 5,
-          "line-dasharray": [2, 1],
+          "line-dasharray": [2, 2],
+        },
+      });
+
+      map.addLayer({
+        id: "saferoutesla-lane",
+        type: "line",
+        source: "saferoutesla",
+        filter: ["==", "routeType", "lane"],
+        paint: {
+          "line-color": "blue",
+          "line-width": 3,
+        },
+      });
+
+      map.addLayer({
+        id: "saferoutesla-track",
+        type: "line",
+        source: "saferoutesla",
+        filter: ["==", "routeType", "track"],
+        paint: {
+          "line-color": "yellow",
+          "line-width": 5,
+          // "line-gap-width": 10,
+        },
+      });
+
+      map.addLayer({
+        id: "saferoutesla-track-outline",
+        type: "line",
+        source: "saferoutesla",
+        filter: ["==", "routeType", "track"],
+        paint: {
+          "line-color": "black",
+          "line-width": 2,
+          "line-gap-width": 5,
+        },
+      });
+
+      map.addLayer({
+        id: "saferoutesla-protected",
+        type: "line",
+        source: "saferoutesla",
+        filter: ["==", "routeType", "protected"],
+        paint: {
+          "line-color": "black",
+          "line-width": 2,
+          "line-gap-width": 2,
+          "line-dasharray": [2, 2],
+        },
+      });
+      map.addLayer({
+        id: "saferoutesla-protected-inner",
+        type: "line",
+        source: "saferoutesla",
+        filter: ["==", "routeType", "protected"],
+        paint: {
+          "line-color": "yellow",
+          "line-width": 2,
         },
       });
     });
