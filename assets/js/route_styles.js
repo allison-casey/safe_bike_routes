@@ -14,7 +14,7 @@ export default [
     routeType: "street",
     paintLayers: [
       {
-        "line-color": "#2daed6",
+        "line-color": "#c2a5cf",
         "line-width": 3,
         "line-dasharray": [1, 1],
       },
@@ -24,7 +24,7 @@ export default [
     routeType: "lane",
     paintLayers: [
       {
-        "line-color": "#2a97b8",
+        "line-color": "#7b3294",
         "line-width": 3,
       },
     ],
@@ -33,14 +33,13 @@ export default [
     routeType: "protected",
     paintLayers: [
       {
-        "line-color": "black",
-        "line-width": 2,
-        "line-gap-width": 2,
-        "line-dasharray": [4, 4],
+        "line-color": "#a6dba0",
+        "line-width": 5,
       },
       {
-        "line-color": "#2a97b8",
-        "line-width": 3,
+        "line-color": "white",
+        "line-width": 2,
+        "line-gap-width": 5,
       },
     ],
   },
@@ -48,13 +47,13 @@ export default [
     routeType: "track",
     paintLayers: [
       {
-        "line-color": "black",
-        "line-width": 2,
-        "line-gap-width": 2,
+        "line-color": "#008837",
+        "line-width": 5,
       },
       {
-        "line-color": "#2a97b8",
-        "line-width": 3,
+        "line-color": "white",
+        "line-width": 2,
+        "line-gap-width": 5,
       },
     ],
   },
