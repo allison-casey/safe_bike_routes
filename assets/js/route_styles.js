@@ -24,7 +24,7 @@ export default [
     routeType: "lane",
     paintLayers: [
       {
-        "line-color": "#7b3294",
+        "line-color": "#c2a5cf",
         "line-width": 3,
       },
     ],
@@ -33,7 +33,7 @@ export default [
     routeType: "protected",
     paintLayers: [
       {
-        "line-color": "#a6dba0",
+        "line-color": "#7b3294",
         "line-width": 5,
       },
       {
