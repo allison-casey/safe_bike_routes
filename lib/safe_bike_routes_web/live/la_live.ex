@@ -15,7 +15,6 @@ defmodule SafeBikeRoutesWeb.LALive do
     |> JS.add_class("off", to: "#slideout:not(.off)")
     |> JS.remove_class("off", to: "#slideout-button.off")
     |> JS.add_class("off", to: "#slideout-button:not(.off)")
-    |> JS.dispatch("resize")
   end
 
   def panel_button_classes() do

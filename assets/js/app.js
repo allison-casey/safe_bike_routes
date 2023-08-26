@@ -72,9 +72,18 @@ Hooks.Map = {
     });
 
     // fix for map canvas not resizing when css grid changes
-    const resizer = new ResizeObserver(() => {
-      map.resize();
-    });
+    const debounce = (func, delay) => {
+      let debounceTimer;
+      return function () {
+        const context = this;
+        const args = arguments;
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => func.apply(context, args), delay);
+      };
+    };
+
+    // this 150ms matches the transition of the control panel
+    const resizer = new ResizeObserver(debounce(() => map.resize(), 150));
     resizer.observe(map.getContainer());
 
     this.handleEvent("load_routes", ({ routes }) => {
