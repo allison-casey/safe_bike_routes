@@ -15,37 +15,7 @@ defmodule SafeBikeRoutesWeb.LALive do
     |> JS.add_class("off", to: "#slideout:not(.off)")
     |> JS.remove_class("off", to: "#slideout-button.off")
     |> JS.add_class("off", to: "#slideout-button:not(.off)")
-  end
-
-  def panel_classes() do
-    style = [
-      "flex",
-      "flex-col",
-      "bg-white",
-      "shadow",
-      "p-7",
-      "fixed",
-      "z-20",
-      "ease-in-out",
-      "duration-300",
-      "overflow-y-auto"
-    ]
-
-    desktop = [
-      "md:top-0",
-      "md:right-0",
-      "md:w-[400px]",
-      "md:h-full"
-    ]
-
-    mobile = [
-      "bottom-0",
-      "right-0",
-      "w-full",
-      "h-[300px]"
-    ]
-
-    style ++ desktop ++ mobile
+    |> JS.dispatch("resize")
   end
 
   def panel_button_classes() do
@@ -85,12 +55,12 @@ defmodule SafeBikeRoutesWeb.LALive do
     style ++ desktop ++ mobile
   end
 
-  def render(assigns) do
+  def control_panel(assigns) do
     ~H"""
     <button id="slideout-button" class={panel_button_classes()} phx-click={toggle_panel()}>
       <SafeBikeRoutesWeb.CoreComponents.icon name="hero-chevron-left" />
     </button>
-    <div id="slideout" class={panel_classes()}>
+    <div class="p-5 overflow-y-auto">
       <div class="text-xl font-medium text-black">Safe Bike Routes: LA</div>
       <p class="text-slate-500">
         Because Google Maps Bike Routes are ass and we don't want to die.
@@ -160,12 +130,22 @@ defmodule SafeBikeRoutesWeb.LALive do
         </span>
       </a>
     </div>
-    <div
-      id="map"
-      phx-hook="Map"
-      phx-update="ignore"
-      style="position: absolute; top: 0; bottom: 0; left: 0; width: 100%;"
-    />
+    """
+  end
+
+  def render(assigns) do
+    ~H"""
+    <div class="h-screen grid grid-rows-[1fr_auto] md:grid-rows-1 md:grid-cols-[1fr_auto]">
+      <div>
+        <div id="map" class="z-10 h-full w-full relative" phx-hook="Map" phx-update="ignore" />
+      </div>
+      <div
+        id="slideout"
+        class="z-40 bg-white shadow overflow-y-auto transition-all h-[300px] md:w-[400px] md:h-auto"
+      >
+        <.control_panel />
+      </div>
+    </div>
     """
   end
 
