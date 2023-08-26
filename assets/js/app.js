@@ -22,6 +22,7 @@ import { Socket } from "phoenix";
 import { LiveSocket } from "phoenix_live_view";
 import topbar from "../vendor/topbar";
 import mapboxgl from "mapbox-gl";
+import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 
 let Hooks = {};
 
@@ -42,6 +43,16 @@ Hooks.Map = {
       zoom: 12,
     });
 
+    map.addControl(
+      new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+        marker: true,
+        bbox: bounds.flat(),
+      }),
+      "top-right",
+    );
+
     // Add geolocate control to the map.
     map.addControl(
       new mapboxgl.GeolocateControl({
@@ -59,6 +70,12 @@ Hooks.Map = {
     map.on("load", () => {
       this.pushEvent("map_loaded", {});
     });
+
+    // fix for map canvas not resizing when css grid changes
+    const resizer = new ResizeObserver(() => {
+      map.resize();
+    });
+    resizer.observe(map.getContainer());
 
     this.handleEvent("load_routes", ({ routes }) => {
       map.addSource("saferoutesla", {
