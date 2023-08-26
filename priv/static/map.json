@@ -477,7 +477,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "routeType": "track" },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.49089, 34.01455, 0],
@@ -906,8 +906,7 @@
           [-118.42121, 34.03701, 0]
         ],
         "type": "LineString"
-      },
-      "id": 3
+      }
     },
     {
       "type": "Feature",
@@ -4026,7 +4025,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "routeType": "track" },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.37675, 34.02696, 0],
@@ -5032,8 +5031,7 @@
           [-118.39158, 33.81083, 0]
         ],
         "type": "LineString"
-      },
-      "id": 15
+      }
     },
     {
       "type": "Feature",
@@ -7969,15 +7967,14 @@
     },
     {
       "type": "Feature",
-      "properties": { "routeType": "protected" },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.424623, 34.008625, 0],
           [-118.377945, 34.035218, 0]
         ],
         "type": "LineString"
-      },
-      "id": 84
+      }
     },
     {
       "type": "Feature",
@@ -9509,8 +9506,7 @@
           [-118.504431, 34.019594, 0]
         ],
         "type": "LineString"
-      },
-      "id": 179
+      }
     },
     {
       "type": "Feature",
@@ -10261,7 +10257,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "routeType": "lane" },
+      "properties": { "routeType": "street" },
       "geometry": {
         "coordinates": [
           [-118.27750165369511, 34.090988437047685],
@@ -10289,8 +10285,7 @@
           [-118.27686850268663, 34.11490466715571]
         ],
         "type": "LineString"
-      },
-      "id": 208
+      }
     },
     {
       "type": "Feature",
