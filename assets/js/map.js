@@ -9,6 +9,17 @@ const BOUNDS = [
 ];
 const CENTER = [-118.35874251099995, 34.061734936928694];
 const USE_LEGACY_ROUTE_STYLES = true;
+const DEFAULT_MAP_STYLE = "Streets";
+const MAP_STYLES = [
+  {
+    title: "Streets",
+    style: "mapbox://styles/mapbox/streets-v12",
+  },
+  {
+    title: "Satellite Streets",
+    style: "mapbox://styles/mapbox/satellite-streets-v12",
+  },
+];
 
 function addGeocoder(map, bounds, location) {
   map.addControl(
@@ -64,13 +75,20 @@ const handleLoadRoutesEvent =
     }
   };
 
+const handleMapStyleChangeEvent =
+  (map) =>
+  ({ styleName }) => {
+    const style = MAP_STYLES.find((d) => d.title === styleName).style;
+    map.setStyle(style);
+  };
+
 export function initMap() {
   mapboxgl.accessToken =
     "pk.eyJ1IjoiYWxsaXNvbi1jYXNleSIsImEiOiJjbGt5Y2puaDExOTJ2M2dvODk3YmtvZ2RsIn0.c_wjxvRq0S2Nv58mxfStyg";
 
   const map = new mapboxgl.Map({
     container: "map",
-    style: "mapbox://styles/mapbox/streets-v11",
+    style: MAP_STYLES.find((d) => d.title === DEFAULT_MAP_STYLE).style,
     center: CENTER,
     maxBounds: BOUNDS,
     zoom: 12,
@@ -87,4 +105,5 @@ export function initMap() {
   // Server Event Handlers
   //// server will respond with the json routes to paint after map has loaded
   this.handleEvent("load_routes", handleLoadRoutesEvent(map));
+  this.handleEvent("set_map_style", handleMapStyleChangeEvent(map));
 }
