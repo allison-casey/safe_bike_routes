@@ -5,8 +5,10 @@ defmodule SafeBikeRoutesWeb.LALive do
              |> File.read!()
              |> Poison.decode!()
 
+  @map_styles [%{id: "Streets", name: "Streets"}, %{id: "Satellite Streets", name: "Satelite"}]
+
   def mount(_params, _session, socket) do
-    {:ok, socket}
+    {:ok, assign(socket, current_style: "Streets", styles: @map_styles)}
   end
 
   def toggle_panel(js \\ %JS{}) do
@@ -135,7 +137,25 @@ defmodule SafeBikeRoutesWeb.LALive do
   def render(assigns) do
     ~H"""
     <div class="h-screen grid grid-rows-[1fr_auto] md:grid-rows-1 md:grid-cols-[1fr_auto]">
-      <div>
+      <div class="relative">
+        <div class="absolute flex left-0 bottom-0 mb-9 z-20">
+          <%= for style <- @styles do %>
+            <div
+              phx-click="change_map_style"
+              phx-value-id={style.id}
+              class={[
+                (@current_style === style.id && "bg-blue-500") || "bg-white",
+                @current_style === style.id && "text-white",
+                "py-1",
+                "px-2",
+                "text-xs",
+                "font-semibold"
+              ]}
+            >
+              <%= style.name %>
+            </div>
+          <% end %>
+        </div>
         <div id="map" class="z-10 h-full w-full relative" phx-hook="Map" phx-update="ignore" />
       </div>
       <div
@@ -150,5 +170,14 @@ defmodule SafeBikeRoutesWeb.LALive do
 
   def handle_event("map_loaded", _value, socket) do
     {:noreply, push_event(socket, "load_routes", %{routes: @la_routes})}
+  end
+
+  def handle_event("change_map_style", %{"id" => style_id}, socket) do
+    if socket.assigns.current_style === style_id do
+      {:noreply, socket}
+    else
+      socket = assign(socket, current_style: style_id)
+      {:noreply, push_event(socket, "set_map_style", %{styleName: style_id})}
+    end
   end
 end
