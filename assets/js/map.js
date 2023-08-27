@@ -59,20 +59,26 @@ function initResizeObserver(map) {
   resizer.observe(map.getContainer());
 }
 
+function loadRoutes(map, routes) {
+  if (!map.safe_routes) return;
+  map.addSource("saferoutesla", {
+    type: "geojson",
+    data: routes,
+  });
+
+  // waiting for all the routes to categorized correctly before switching this
+  // over to the new route styles
+  const styles = USE_LEGACY_ROUTE_STYLES ? legacyRouteStyles : routeStyles;
+  for (const { routeType, paintLayers } of styles) {
+    paintRoute(map, "saferoutesla", routeType, paintLayers);
+  }
+}
+
 const handleLoadRoutesEvent =
   (map) =>
   ({ routes }) => {
-    map.addSource("saferoutesla", {
-      type: "geojson",
-      data: routes,
-    });
-
-    // waiting for all the routes to categorized correctly before switching this
-    // over to the new route styles
-    const styles = USE_LEGACY_ROUTE_STYLES ? legacyRouteStyles : routeStyles;
-    for (const { routeType, paintLayers } of styles) {
-      paintRoute(map, "saferoutesla", routeType, paintLayers);
-    }
+    map.safe_routes = routes;
+    loadRoutes(map, map.safe_routes);
   };
 
 const handleMapStyleChangeEvent =
@@ -101,6 +107,7 @@ export function initMap() {
   // Map Events
   //// tell server the canvas has been initiated
   map.on("load", () => this.pushEvent("map_loaded", {}));
+  map.on("style.load", () => loadRoutes(map, map.safe_routes));
 
   // Server Event Handlers
   //// server will respond with the json routes to paint after map has loaded
