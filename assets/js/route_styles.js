@@ -1,4 +1,4 @@
-export default [
+export const routeStyles = [
   {
     routeType: "sidewalk",
     paintLayers: [
@@ -13,10 +13,11 @@ export default [
   {
     routeType: "street",
     paintLayers: [
+      { "line-width": 3, "line-color": "white" },
       {
         "line-color": "#c2a5cf",
         "line-width": 3,
-        "line-dasharray": [1, 1],
+        "line-dasharray": [2, 1],
       },
     ],
   },
@@ -58,3 +59,32 @@ export default [
     ],
   },
 ];
+
+export const legacyRouteStyles = [
+  {
+    routeType: "sidwalk",
+    paintLayers: [
+      {
+        "line-color": "orange",
+        "line-width": 5,
+        "line-dasharray": [2, 1],
+      },
+    ],
+  },
+  { routeType: "street", paintLayers: [{}] },
+  { routeType: "lane", paintLayers: [{}] },
+  { routeType: "protected", paintLayers: [{}] },
+  { routeType: "track", paintLayers: [{}] },
+];
+
+export function paintRoute(map, source, routeType, paintLayers) {
+  for (const [index, paintLayer] of paintLayers.entries()) {
+    map.addLayer({
+      id: `${source}-${routeType}-${index}`,
+      type: "line",
+      source: source,
+      filter: ["==", "routeType", routeType],
+      paint: paintLayer,
+    });
+  }
+}
