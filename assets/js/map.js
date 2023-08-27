@@ -1,7 +1,7 @@
-import { debounce } from "./utils";
-import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
-import { paintRoute, routeStyles, legacyRouteStyles } from "./route_styles";
+import mapboxgl from "mapbox-gl";
+import { legacyRouteStyles, paintRoute, routeStyles } from "./route_styles";
+import { debounce } from "./utils";
 
 const BOUNDS = [
   [-118.88065856936811, 33.63722119725411], // Southwest coordinates

@@ -23,7 +23,7 @@ import { LiveSocket } from "phoenix_live_view";
 import topbar from "../vendor/topbar";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
-import { paintRoute, routeStyles, legacyRouteStyles } from "./route_styles";
+import { legacyRouteStyles, paintRoute, routeStyles } from "./route_styles";
 import { initMap } from "./map";
 
 const USE_LEGACY_ROUTE_STYLES = true;
