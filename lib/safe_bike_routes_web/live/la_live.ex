@@ -134,28 +134,34 @@ defmodule SafeBikeRoutesWeb.LALive do
     """
   end
 
+  def map_style_control(assigns) do
+    ~H"""
+    <div class="absolute flex left-0 bottom-0 mb-9 z-20">
+      <%= for style <- @styles do %>
+        <div
+          phx-click="change_map_style"
+          phx-value-id={style.id}
+          class={[
+            (@current_style === style.id && "bg-blue-500") || "bg-white",
+            @current_style === style.id && "text-white",
+            "py-1",
+            "px-2",
+            "text-xs",
+            "font-semibold"
+          ]}
+        >
+          <%= style.name %>
+        </div>
+      <% end %>
+    </div>
+    """
+  end
+
   def render(assigns) do
     ~H"""
     <div class="h-screen grid grid-rows-[1fr_auto] md:grid-rows-1 md:grid-cols-[1fr_auto]">
       <div class="relative">
-        <div class="absolute flex left-0 bottom-0 mb-9 z-20">
-          <%= for style <- @styles do %>
-            <div
-              phx-click="change_map_style"
-              phx-value-id={style.id}
-              class={[
-                (@current_style === style.id && "bg-blue-500") || "bg-white",
-                @current_style === style.id && "text-white",
-                "py-1",
-                "px-2",
-                "text-xs",
-                "font-semibold"
-              ]}
-            >
-              <%= style.name %>
-            </div>
-          <% end %>
-        </div>
+        <.map_style_control current_style={@current_style} styles={@styles} />
         <div id="map" class="z-10 h-full w-full relative" phx-hook="Map" phx-update="ignore" />
       </div>
       <div
