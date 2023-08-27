@@ -23,21 +23,11 @@ import { LiveSocket } from "phoenix_live_view";
 import topbar from "../vendor/topbar";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
-import routeStyles from "./route_styles";
+import { paintRoute, routeStyles, legacyRouteStyles } from "./route_styles";
+
+const USE_LEGACY_ROUTE_STYLES = true;
 
 let Hooks = {};
-
-function paintRoute(map, source, routeType, paintLayers) {
-  for (const [index, paintLayer] of paintLayers.entries()) {
-    map.addLayer({
-      id: `${source}-${routeType}-${index}`,
-      type: "line",
-      source: source,
-      filter: ["==", "routeType", routeType],
-      paint: paintLayer,
-    });
-  }
-}
 
 Hooks.Map = {
   initMap() {
@@ -104,7 +94,9 @@ Hooks.Map = {
         type: "geojson",
         data: routes,
       });
-      for (const { routeType, paintLayers } of routeStyles) {
+
+      const styles = USE_LEGACY_ROUTE_STYLES ? legacyRouteStyles : routeStyles;
+      for (const { routeType, paintLayers } of styles) {
         paintRoute(map, "saferoutesla", routeType, paintLayers);
       }
     });
