@@ -24,86 +24,15 @@ import topbar from "../vendor/topbar";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import { paintRoute, routeStyles, legacyRouteStyles } from "./route_styles";
+import { initMap } from "./map";
 
 const USE_LEGACY_ROUTE_STYLES = true;
 
 let Hooks = {};
 
 Hooks.Map = {
-  initMap() {
-    const bounds = [
-      [-118.88065856936811, 33.63722119725411], // Southwest coordinates
-      [-117.83375850298786, 34.4356118682199], // Northeast coordinates
-    ];
-
-    mapboxgl.accessToken =
-      "pk.eyJ1IjoiYWxsaXNvbi1jYXNleSIsImEiOiJjbGt5Y2puaDExOTJ2M2dvODk3YmtvZ2RsIn0.c_wjxvRq0S2Nv58mxfStyg";
-    var map = new mapboxgl.Map({
-      container: "map",
-      style: "mapbox://styles/mapbox/streets-v11",
-      center: [-118.35874251099995, 34.061734936928694],
-      maxBounds: bounds,
-      zoom: 12,
-    });
-
-    map.addControl(
-      new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
-        mapboxgl: mapboxgl,
-        marker: true,
-        bbox: bounds.flat(),
-      }),
-      "top-right",
-    );
-
-    // Add geolocate control to the map.
-    map.addControl(
-      new mapboxgl.GeolocateControl({
-        positionOptions: {
-          enableHighAccuracy: true,
-        },
-        // When active the map will receive updates to the device's location as it changes.
-        trackUserLocation: true,
-        // Draw an arrow next to the location dot to indicate which direction the device is heading.
-        showUserHeading: true,
-      }),
-      "top-left",
-    );
-
-    map.on("load", () => {
-      this.pushEvent("map_loaded", {});
-    });
-
-    // fix for map canvas not resizing when css grid changes
-    const debounce = (func, delay) => {
-      let debounceTimer;
-      return function () {
-        const context = this;
-        const args = arguments;
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(() => func.apply(context, args), delay);
-      };
-    };
-
-    // this 150ms matches the transition of the control panel
-    const resizer = new ResizeObserver(debounce(() => map.resize(), 150));
-    resizer.observe(map.getContainer());
-
-    this.handleEvent("load_routes", ({ routes }) => {
-      map.addSource("saferoutesla", {
-        type: "geojson",
-        data: routes,
-      });
-
-      const styles = USE_LEGACY_ROUTE_STYLES ? legacyRouteStyles : routeStyles;
-      for (const { routeType, paintLayers } of styles) {
-        paintRoute(map, "saferoutesla", routeType, paintLayers);
-      }
-    });
-  },
-
   mounted() {
-    this.initMap();
+    initMap.call(this);
   },
 };
 
