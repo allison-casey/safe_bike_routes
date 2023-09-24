@@ -147,7 +147,8 @@ defmodule SafeBikeRoutesWeb.LALive do
             "py-1",
             "px-2",
             "text-xs",
-            "font-semibold"
+            "font-semibold",
+            "cursor-pointer"
           ]}
         >
           <%= style.name %>
